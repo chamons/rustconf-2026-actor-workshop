@@ -7,9 +7,12 @@ mod threaded_actor_drop;
 #[allow(dead_code)]
 mod async_state_actor;
 
+#[allow(dead_code)]
+mod chat_room;
+
 #[tokio::main]
 async fn main() -> eyre::Result<()> {
-    async_state_actor::run().await?;
+    chat_room::run().await?;
 
     Ok(())
 }
