@@ -8,11 +8,14 @@ mod threaded_actor_drop;
 mod async_state_actor;
 
 #[allow(dead_code)]
+mod nice_async_state_actor;
+
+#[allow(dead_code)]
 mod chat_room;
 
 #[tokio::main]
 async fn main() -> eyre::Result<()> {
-    chat_room::run().await?;
+    nice_async_state_actor::run().await?;
 
     Ok(())
 }
