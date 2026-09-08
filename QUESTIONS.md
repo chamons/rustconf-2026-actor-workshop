@@ -1,0 +1,1 @@
+- In the threaded example, why do you have a quit message instead of just closing the input channel. The tokio versions does that?
